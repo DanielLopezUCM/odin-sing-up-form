@@ -1,0 +1,129 @@
+:root {
+  --left-pannel-with: 40%;
+}
+
+.input {
+  flex-direction: column;
+  display: flex;
+  width: 35%;
+  padding: 8px;
+  padding-left: 0;
+  gap:2px;
+}
+
+.left {
+  margin-left: 5%;
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10%;
+  padding-bottom: 4%;
+}
+
+.form > h1 {
+  width: 100%;
+}
+
+.input > label {
+  font-size: 0.8rem;
+}
+
+#create-account {
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 5%;
+  font-size: 0.95rem;
+  border: rgb(255, 183, 0) 2px solid;
+  background-color: #090909;
+  color: rgb(255, 183, 0);
+}
+
+#create-account:hover {
+  background-color: rgb(255, 183, 0);
+  color: black;
+}
+
+input {
+  background-color: #0b0b0b;
+  color:#d3d3d3;
+  border-radius: 4px;
+  border: #505050 2px solid;
+  font-size: 0.8rem;
+  padding: 5px 7px
+}
+
+.input > input:invalid {
+  box-shadow: 0px 0px 5px rgba(255, 92, 92, 0.6);
+  background-color: rgba(79, 2, 2, 0.050);
+}
+
+.input > input:focus {
+  box-shadow: 2px 2px 7px rgba(255, 183, 0, 0.6);
+  background-color: #171717;
+}
+
+
+.photo-footer {
+  position: absolute;
+  top: calc(100% - 2rem);
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 0.5rem;
+}
+
+
+#left-pannel {
+  --text-color: azure;
+  position: relative;
+  width: var(--left-pannel-with);
+  height: 100%;
+  background-color: black;
+  background-image: url(/resources/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--text-color);
+}
+
+#left-pannel a {
+  color: var(--text-color);
+}
+
+#right-pannel {
+  width: calc(100% - var(--left-pannel-with));
+  --text-color: #d3d3d3;
+  background-color: #070707;
+  color: var(--text-color);
+}
+
+.form {
+  background-color: #0b0b0b;
+  box-shadow: 0px 0px 15px rgba(255, 183, 0, 0.6);
+}
+
+#form-header p {
+  width: 80%;
+  font-size: 1.3rem;
+}
+
+#form-header {
+  margin-top: 15%;
+  margin-bottom: 7%;
+  color: rgba(255, 183, 0, 0.75);
+}
+
+#form-header i {
+  color: rgb(255, 174, 0);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
